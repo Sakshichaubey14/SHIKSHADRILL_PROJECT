@@ -38,7 +38,7 @@ bucket = storage.bucket() if FIREBASE_STORAGE_BUCKET else None
 app = Flask(__name__)
 CORS(app)
 
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode="threading")
 active_users = {}
 
 
