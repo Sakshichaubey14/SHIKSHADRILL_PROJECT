@@ -23,15 +23,10 @@ FIREBASE_STORAGE_BUCKET = os.environ.get("FIREBASE_STORAGE_BUCKET")
 PROJECT_ID = os.environ.get("GCP_PROJECT") or os.environ.get("GCLOUD_PROJECT") or "shikshadrill"
 
 
-SERVICE_ACCOUNT_FILE = os.environ.get(
-    "GOOGLE_APPLICATION_CREDENTIALS",
-    os.path.join(os.path.dirname(__file__), "serviceAccountKey.json")
-)
+import json
 
-if not os.path.exists(SERVICE_ACCOUNT_FILE):
-    raise RuntimeError("Missing Firebase credentials. serviceAccountKey.json not found")
-
-cred = credentials.Certificate(SERVICE_ACCOUNT_FILE)
+cred_dict = json.loads(os.environ.get("FIREBASE_CREDENTIALS"))
+cred = credentials.Certificate(cred_dict)
 
 firebase_init_kwargs = {"storageBucket": FIREBASE_STORAGE_BUCKET} if FIREBASE_STORAGE_BUCKET else {}
 firebase_admin.initialize_app(cred, firebase_init_kwargs)
