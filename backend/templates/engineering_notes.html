@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Engineering - Notes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap');
+    body { font-family: 'Poppins', sans-serif; }
+    .game-title { font-family: 'Fredoka One', cursive; }
+    .fade-in { animation: fadeIn 1s ease forwards; opacity: 0; }
+    @keyframes fadeIn { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+    .hover-bounce { transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; }
+    .hover-bounce:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 25px rgba(0,0,0,0.2); }
+
+    .ncert-box {
+      display:inline-block;
+      margin-top:0.5rem;
+      padding:0.35rem 0.8rem;
+      background-color:#2563eb;
+      color:white;
+      font-weight:500;
+      border-radius:0.5rem;
+      text-decoration:none;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      font-size:0.9rem;
+    }
+    .ncert-box:hover {
+      background-color:#1e40af;
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    .bg-animations span {
+      position: absolute;
+      bottom: -50px;
+      font-size: 2rem;
+      animation: floatUp linear infinite;
+    }
+    .bg-animations span:nth-child(1){ left: 10%; animation-duration:18s; }
+    .bg-animations span:nth-child(2){ left: 25%; animation-duration:22s; }
+    .bg-animations span:nth-child(3){ left: 50%; animation-duration:26s; }
+    .bg-animations span:nth-child(4){ left: 75%; animation-duration:20s; }
+    .bg-animations span:nth-child(5){ left: 90%; animation-duration:24s; }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(0deg); opacity:1; }
+      50% { transform: translateY(-600px) rotate(360deg); opacity:0.8; }
+      100% { transform: translateY(-1200px) rotate(720deg); opacity:0; }
+    }
+
+    .animated-box {
+      position: relative;
+      overflow: hidden;
+    }
+    .animated-box::before {
+      content:'';
+      position: absolute;
+      top:-50%;
+      left:-50%;
+      width:200%;
+      height:200%;
+      background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2), transparent 70%);
+      animation: rotateBox 6s linear infinite;
+      pointer-events:none;
+      z-index:0;
+    }
+    .animated-box h3, .animated-box a { position: relative; z-index:1; }
+    @keyframes rotateBox { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen relative">
+
+  <div class="bg-animations">
+    <span>🛠️</span><span>⚙️</span><span>🧱</span><span>🔌</span><span>💧</span>
+  </div>
+
+  <!-- Header (blue–purple gradient like Science) -->
+  <header class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white shadow-lg relative z-10">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="location.href='index.html'">
+        <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-2xl">🛠️</div>
+        <div>
+          <h1 class="game-title text-2xl">Engineering</h1>
+          <p class="text-sm opacity-75">Notes</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-10 relative z-10">
+    <div class="mb-10 flex items-center space-x-4">
+      <span class="text-4xl">📂</span>
+      <h2 class="text-3xl font-bold text-gray-800">Notes</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-xl p-8">
+      <p class="text-gray-600 mb-6">Access chapter-wise Engineering Notes for Class 6! 📚</p>
+
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-blue-100 to-blue-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-blue-900 flex items-center gap-2">Chapter 1: 🛠️ Introduction to Engineering</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-green-100 to-green-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-green-900 flex items-center gap-2">Chapter 2: ⚙️ Simple Machines & Applications</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-purple-100 to-purple-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-purple-900 flex items-center gap-2">Chapter 3: 🧱 Structures and Materials</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-pink-100 to-pink-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-pink-900 flex items-center gap-2">Chapter 4: 🔌 Electricity and Circuits</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-yellow-900 flex items-center gap-2">Chapter 5: 💧 Water Engineering</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-teal-100 to-teal-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-teal-900 flex items-center gap-2">Chapter 6: 🔋 Energy and Machines</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-orange-100 to-orange-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-orange-900 flex items-center gap-2">Chapter 7: 🚆 Transportation Engineering</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+        <div class="fade-in hover-bounce animated-box bg-gradient-to-r from-indigo-100 to-indigo-200 rounded-xl p-4 shadow-md">
+          <h3 class="font-semibold text-lg text-indigo-900 flex items-center gap-2">Chapter 8: 🤖 Robotics Basics</h3>
+          <a href="#" class="ncert-box" target="_blank">📄 Notes</a>
+        </div>
+
+     
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>

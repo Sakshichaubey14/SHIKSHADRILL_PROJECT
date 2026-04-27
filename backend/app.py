@@ -159,6 +159,22 @@ def quiz_page():
 def quiz_result_page():
     return render_template("quiz_result.html")
 
+@app.route("/science_notes")
+def science_notes():
+    return render_template("science_notes.html")
+
+@app.route("/technology_notes")
+def technology_notes():
+    return render_template("technology_notes.html")
+
+@app.route("/engineering_notes")
+def engineering_notes():
+    return render_template("engineering_notes.html")
+
+@app.route("/mathematics_notes")
+def mathematics_notes():
+    return render_template("mathematics_notes.html")
+
 
 
 

@@ -12,7 +12,7 @@ ShikshaDrill is an interactive learning platform designed to make education enga
 
 ## ✨ Features
 
-* 📚 **Subject-wise Learning Content** (NCERT, syllabus, videos, test papers)
+* 📚 **Subject-wise Learning Content** (NCERT, syllabus, videos, test papers , Quizzes, Animated learning)
 * 🧠 **Interactive Quizzes & Puzzle Games**
 * 💬 **Live Chat System (Real-time communication using SocketIO)**
 * 👩‍🏫 **Student & Teacher Dashboards**
