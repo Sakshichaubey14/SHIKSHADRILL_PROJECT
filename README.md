@@ -12,7 +12,7 @@ ShikshaDrill is an interactive learning platform designed to make education enga
 
 ## 🌐 Live Demo
 
-🚀 **Backend Live URL:**  
+🚀 **Live URL:**  
 https://shikshadrill.onrender.com
 
 ---
@@ -136,7 +136,7 @@ Sensitive files like `.env` and `serviceAccountKey.json` are not included in the
 ## 👥 Team (Smart India Hackathon)
 
 **Team Leader**  
-- Sakshi Chaubey – Led backend development, Firebase integration, and deployment on Render
+- Sakshi Chaubey  –  Led backend development, Firebase integration, and deployment on Render
 
 **Team Members**  
 1. Khateeba Ruhulla  
@@ -145,9 +145,8 @@ Sensitive files like `.env` and `serviceAccountKey.json` are not included in the
 4. Mohd Huzaifa Khan  
 5. Akshay Yadav
 
-**👨‍🏫 Mentor**
-
-- Mr. Atif Bashir – Guided the project development and provided technical insights.
+**Mentor**
+- Mr. Atif Bashir  –  Guided the project development and provided technical insights.
   
 ---
 
