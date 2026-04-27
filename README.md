@@ -10,6 +10,13 @@ ShikshaDrill is an interactive learning platform designed to make education enga
 
 ---
 
+## 🌐 Live Demo
+
+🚀 **Backend Live URL:**  
+https://shikshadrill.onrender.com
+
+---
+
 ## ✨ Features
 
 * 📚 **Subject-wise Learning Content** (NCERT, syllabus, videos, test papers)
@@ -41,6 +48,12 @@ ShikshaDrill is an interactive learning platform designed to make education enga
 * Docker
 * REST APIs
 
+**Deployment:**
+
+- Backend hosted on **Render**
+- Uses **Gunicorn** for production server
+- Environment variables managed securely via Render dashboard
+  
 ---
 
 ## 📁 Project Structure
@@ -67,7 +80,7 @@ ShikshaDrill_Project/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/YOUR-USERNAME/SHIKSHADRILL_PROJECT.git
+git clone https://github.com/Sakshichaubey14/SHIKSHADRILL_PROJECT.git
 cd SHIKSHADRILL_PROJECT
 ```
 
@@ -123,7 +136,7 @@ Sensitive files like `.env` and `serviceAccountKey.json` are not included in the
 ## 👥 Team (Smart India Hackathon)
 
 **Team Leader**  
-- Sakshi Chaubey
+- Sakshi Chaubey – Led backend development, Firebase integration, and deployment on Render
 
 **Team Members**  
 1. Khateeba Ruhulla  
@@ -132,6 +145,10 @@ Sensitive files like `.env` and `serviceAccountKey.json` are not included in the
 4. Mohd Huzaifa Khan  
 5. Akshay Yadav
 
+**👨‍🏫 Mentor**
+
+- Mr. Atif Bashir – Guided the project development and provided technical insights.
+  
 ---
 
 ## 💡 Inspiration
